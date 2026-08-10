@@ -1,8 +1,6 @@
-# QuantLab
+# Agentic AI for Quantitative Research and Alpha Discovery
 
-**An Agentic AI Framework for End-to-End Quantitative Research and Alpha Discovery**
-
-QuantLab is a multi-agent AI system that autonomously performs literature review, hypothesis generation, data engineering, model development, backtesting, evaluation, and reporting for quantitative finance. It is developed as an MSc thesis proposal for the ETH Zurich Agentic Systems Lab.
+Agentic AI for Quantitative Research and Alpha Discovery is a multi-agent AI system that autonomously performs literature review, hypothesis generation, data engineering, model development, backtesting, evaluation, and reporting for quantitative finance. It is developed as an MSc thesis proposal for the ETH Zurich Agentic Systems Lab.
 
 ---
 
@@ -16,14 +14,13 @@ QuantLab is a multi-agent AI system that autonomously performs literature review
 6. [Configuration](#configuration)
 7. [Evaluation](#evaluation)
 8. [Development](#development)
-9. [Roadmap](#roadmap)
-10. [License](#license)
+9. [License](#license)
 
 ---
 
 ## Motivation
 
-Systematic alpha discovery is bottlenecked by human throughput: a researcher can meaningfully test only a handful of hypotheses per week. QuantLab treats the full research pipeline as a graph of specialised LLM agents, adds a reflective memory layer for cross-run learning, and enforces leakage-aware backtesting so that the throughput gain does not translate into a p-hacking gain.
+Systematic alpha discovery is bottlenecked by human throughput: a researcher can meaningfully test only a handful of hypotheses per week. Agentic AI for Quantitative Research and Alpha Discovery treats the full research pipeline as a graph of specialised LLM agents, adds a reflective memory layer for cross-run learning, and enforces leakage-aware backtesting so that the throughput gain does not translate into a p-hacking gain.
 
 The thesis contribution is not "another autonomous agent"; it is a rigorous evaluation of whether reflection and multi-agent coordination measurably improve out-of-sample research quality in a high-noise, adversarial domain.
 
@@ -63,8 +60,8 @@ Full diagram and agent contracts: [`docs/01_System_Architecture.md`](docs/01_Sys
 ## Installation
 
 ```bash
-git clone https://github.com/quantsingularity/QuantLab
-cd QuantLab
+git clone https://github.com/quantsingularity/Agentic-AI-for-Quantitative-Research-and-Alpha-Discovery
+cd Agentic-AI-for-Quantitative-Research-and-Alpha-Discovery
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 ```
@@ -242,19 +239,6 @@ pytest -q
 ruff check src tests
 mypy src
 ```
-
-## Roadmap
-
-See [`docs/04_Six_Month_Plan.md`](docs/04_Six_Month_Plan.md) for the full six-month thesis plan.
-
-| Milestone | Focus                                         |
-| --------- | --------------------------------------------- |
-| M1        | PoC and related-work chapter                  |
-| M2        | Full nine-agent system with reflective memory |
-| M3        | Evaluation harness and baselines              |
-| M4        | Large-scale experiments and ablations         |
-| M5        | Robustness studies                            |
-| M6        | Thesis writing and open-source release        |
 
 ## License
 

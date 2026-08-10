@@ -20,6 +20,6 @@ if [ -z "${OPENAI_API_KEY:-}" ]; then
     echo "an LLM instead." >&2
 fi
 
-echo "Running QuantLab PoC on: \"${OBJECTIVE}\""
+echo "Running Agentic AI for Quantitative Research and Alpha Discovery PoC on: \"${OBJECTIVE}\""
 python -m quantlab.run --objective "${OBJECTIVE}" --out "${OUT_DIR}"
 echo "Artefacts written to ${OUT_DIR}"

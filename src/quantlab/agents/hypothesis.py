@@ -21,7 +21,7 @@ from quantlab.core.llm import (
 )
 from quantlab.core.state import Hypothesis, ResearchState
 
-HYPOTHESIS_SYSTEM = """You are the hypothesis generation agent of QuantLab. Given a
+HYPOTHESIS_SYSTEM = """You are the hypothesis generation agent of Agentic AI for Quantitative Research and Alpha Discovery. Given a
 research objective and a list of supporting paper titles, draft a single testable
 finance research hypothesis. Output a JSON object with exactly these string keys:
 statement, null, alternative, rationale. statement is the claim under test, null is

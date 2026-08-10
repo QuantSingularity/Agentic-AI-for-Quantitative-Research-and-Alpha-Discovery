@@ -1,4 +1,4 @@
-"""Shared state schema for the QuantLab agent graph.
+"""Shared state schema for the Agentic AI for Quantitative Research and Alpha Discovery agent graph.
 
 All agents read and write instances of ResearchState. The state is
 serialisable to JSON and is persisted to PostgreSQL after every agent step

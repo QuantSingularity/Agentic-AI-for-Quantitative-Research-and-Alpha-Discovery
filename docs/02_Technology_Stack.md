@@ -1,4 +1,4 @@
-# QuantLab Technology Stack
+# Agentic AI for Quantitative Research and Alpha Discovery Technology Stack
 
 ## 1. Recommended Stack
 

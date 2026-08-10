@@ -19,7 +19,7 @@ from quantlab.core.llm import (
 )
 from quantlab.core.state import ResearchState
 
-PLANNER_SYSTEM = """You are the research planner of QuantLab. Given a natural-language
+PLANNER_SYSTEM = """You are the research planner of Agentic AI for Quantitative Research and Alpha Discovery. Given a natural-language
 research objective, output a JSON task DAG with keys: literature, hypothesis, data,
 model, backtest, evaluate, report. Each entry has: depends_on (list) and notes.
 Be concise and testable. Do not invent tools."""

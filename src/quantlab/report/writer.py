@@ -193,7 +193,9 @@ def render_markdown(
     verdict_label, verdict_detail = _hypothesis_verdict(h, m)
 
     lines: list[str] = []
-    lines.append("# QuantLab Research Report")
+    lines.append(
+        "# Agentic AI for Quantitative Research and Alpha Discovery Research Report"
+    )
     lines.append(f"### {state['objective']}")
     lines.append("")
     lines.append(f"> **Run ID:** `{state['run_id']}`")
@@ -303,7 +305,7 @@ def render_markdown(
     lines.append("---")
     lines.append("")
     lines.append(
-        "*This report was generated automatically by the QuantLab agentic research "
+        "*This report was generated automatically by the Agentic AI for Quantitative Research and Alpha Discovery agentic research "
         "pipeline. It is a research artefact, not investment advice.*"
     )
 
@@ -768,7 +770,11 @@ def save_report_pdf(md: str, out_dir: Path) -> Path | None:
             self.rect(0, page_h - 6, page_w, 6, fill=1, stroke=0)
             self.setFont("Times-Roman", 8.5)
             self.setFillColor(pal["muted"])
-            self.drawString(_PAGE_MARGIN_LEFT, 28, "QuantLab Research Report")
+            self.drawString(
+                _PAGE_MARGIN_LEFT,
+                28,
+                "Agentic AI for Quantitative Research and Alpha Discovery Research Report",
+            )
             self.drawRightString(
                 page_w - _PAGE_MARGIN_RIGHT,
                 28,
@@ -788,7 +794,7 @@ def save_report_pdf(md: str, out_dir: Path) -> Path | None:
         rightMargin=_PAGE_MARGIN_RIGHT,
         topMargin=_PAGE_MARGIN_TOP,
         bottomMargin=_PAGE_MARGIN_BOTTOM,
-        title="QuantLab Research Report",
+        title="Agentic AI for Quantitative Research and Alpha Discovery Research Report",
     )
     story = _markdown_to_flowables(md, out_dir)
     doc.build(story, canvasmaker=_NumberedCanvas)

@@ -1,6 +1,6 @@
 """Comparative benchmark harness.
 
-Runs the QuantLab pipeline across the configurations listed in a YAML file
+Runs the Agentic AI for Quantitative Research and Alpha Discovery pipeline across the configurations listed in a YAML file
 (typically `configs/benchmark.yaml`) and aggregates their financial and
 system-efficiency metrics into a single CSV/markdown summary. This is the
 concrete implementation of the "Comparative Evaluation" layer described in

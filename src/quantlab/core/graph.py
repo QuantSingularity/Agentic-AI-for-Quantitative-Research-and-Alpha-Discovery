@@ -1,4 +1,4 @@
-"""LangGraph orchestration for the nine-agent QuantLab pipeline.
+"""LangGraph orchestration for the nine-agent Agentic AI for Quantitative Research and Alpha Discovery pipeline.
 
 The graph is intentionally linear for the PoC; the Reflective Memory Agent
 is called after every node via a shared side-channel rather than as an edge
@@ -37,7 +37,7 @@ def _with_reflection(
 
 
 def build_graph(use_reflection: bool = True) -> CompiledStateGraph:
-    """Build the QuantLab agent graph.
+    """Build the Agentic AI for Quantitative Research and Alpha Discovery agent graph.
 
     `use_reflection=False` skips the Reflective Memory Agent's post-stage
     critique at every node, producing the "non-reflective multi-agent

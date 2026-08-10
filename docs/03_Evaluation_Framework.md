@@ -1,4 +1,4 @@
-# QuantLab Research Evaluation Framework
+# Agentic AI for Quantitative Research and Alpha Discovery Research Evaluation Framework
 
 Evaluation is stratified into four layers: financial performance, research quality, system efficiency, and comparative benchmarks. Each layer contributes to a composite score reported in the thesis.
 
@@ -39,11 +39,11 @@ All operational metrics are logged automatically via MLflow tags.
 
 Three baselines are run on the identical set of ten research objectives with an identical compute budget.
 
-| Baseline                            | Description                                                                                                   |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Single-agent baseline               | One GPT-4o instance with function calling; no planner-worker decomposition                                    |
-| Non-reflective multi-agent baseline | The full nine-agent QuantLab graph with the Reflective Memory Agent disabled                                  |
-| Human-assisted workflow baseline    | A quant researcher (thesis author) uses ChatGPT plus manual coding for a fixed four-hour budget per objective |
+| Baseline                            | Description                                                                                                                  |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Single-agent baseline               | One GPT-4o instance with function calling; no planner-worker decomposition                                                   |
+| Non-reflective multi-agent baseline | The full nine-agent Agentic AI for Quantitative Research and Alpha Discovery graph with the Reflective Memory Agent disabled |
+| Human-assisted workflow baseline    | A quant researcher (thesis author) uses ChatGPT plus manual coding for a fixed four-hour budget per objective                |
 
 **Primary comparison metric:** out-of-sample Sharpe ratio, aggregated across objectives by median and interquartile range, with a paired Wilcoxon signed-rank test at alpha = 0.05.
 

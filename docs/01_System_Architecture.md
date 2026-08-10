@@ -1,4 +1,4 @@
-# QuantLab System Architecture
+# Agentic AI for Quantitative Research and Alpha Discovery System Architecture
 
 ## 1. Design Principles
 
