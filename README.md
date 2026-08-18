@@ -1,6 +1,6 @@
 # Agentic AI for Quantitative Research and Alpha Discovery
 
-Agentic AI for Quantitative Research and Alpha Discovery is a multi-agent AI system that autonomously performs literature review, hypothesis generation, data engineering, model development, backtesting, evaluation, and reporting for quantitative finance. It is developed as an MSc thesis proposal for the ETH Zurich Agentic Systems Lab.
+Agentic AI for Quantitative Research and Alpha Discovery is a multi-agent AI system that autonomously performs literature review, hypothesis generation, data engineering, model development, backtesting, evaluation, and reporting for quantitative finance.
 
 ---
 
@@ -21,8 +21,6 @@ Agentic AI for Quantitative Research and Alpha Discovery is a multi-agent AI sys
 ## Motivation
 
 Systematic alpha discovery is bottlenecked by human throughput: a researcher can meaningfully test only a handful of hypotheses per week. Agentic AI for Quantitative Research and Alpha Discovery treats the full research pipeline as a graph of specialised LLM agents, adds a reflective memory layer for cross-run learning, and enforces leakage-aware backtesting so that the throughput gain does not translate into a p-hacking gain.
-
-The thesis contribution is not "another autonomous agent"; it is a rigorous evaluation of whether reflection and multi-agent coordination measurably improve out-of-sample research quality in a high-noise, adversarial domain.
 
 ## Architecture
 
