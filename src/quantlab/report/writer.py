@@ -1,3 +1,4 @@
+from typing import Any, cast
 """Research report renderer.
 
 Emits markdown, a PDF rendering of that same markdown (via reportlab -- no
@@ -338,7 +339,7 @@ def save_equity_curve_png(equity_curve_path: str, out_dir: Path) -> Path | None:
 
     x = mdates.date2num(eq.index)
     trough_x = float(mdates.date2num(trough_idx))
-    trough_y = float(eq.loc[trough_idx])
+    trough_y = float(eq.loc[cast(Any, trough_idx)])
     peak_x = float(mdates.date2num(peak_idx))
 
     line_color, dd_color, grid_color = "#2563eb", "#dc2626", "#94a3b8"
@@ -352,7 +353,7 @@ def save_equity_curve_png(equity_curve_path: str, out_dir: Path) -> Path | None:
         ax.axvspan(peak_x, trough_x, color=dd_color, alpha=0.06, zorder=0)
         ax.scatter([trough_x], [trough_y], color=dd_color, s=22, zorder=4)
         ax.annotate(
-            f"Max DD {drawdown.loc[trough_idx]:.1%}",
+            f"Max DD {drawdown.loc[cast(Any, trough_idx)]:.1%}",
             xy=(trough_x, trough_y),
             xytext=(10, -14),
             textcoords="offset points",
