@@ -1,4 +1,3 @@
-from typing import Any, cast
 """Research report renderer.
 
 Emits markdown, a PDF rendering of that same markdown (via reportlab -- no
@@ -21,7 +20,7 @@ import json
 import re
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 import pandas as pd
 
